@@ -51,6 +51,7 @@
     margin:0 auto;
   }
 
+  /* Header */
   header{
     position:sticky;
     top:0;
@@ -93,15 +94,13 @@
 
   nav a:hover{ color:var(--ink); }
 
+  /* Hero — background photo with dark overlay */
   .hero{
     position:relative;
     min-height:78vh;
     display:flex;
     align-items:center;
-    /* TODO: replace the gradient below with the photo you'll send —
-       background-image: linear-gradient(rgba(15,25,17,.62), rgba(15,25,17,.72)), url('images/hero-bg.jpg');
-       keep the dark gradient layered on top so the text stays readable. */
-    background-image: linear-gradient(rgba(15,25,17,.62), rgba(15,25,17,.72)), linear-gradient(135deg, #2F4A34, #1B2C1E);
+    background-image: linear-gradient(rgba(12,20,14,.72), rgba(12,20,14,.8)), url('images/hero-bg.jpg');
     background-size:cover;
     background-position:center;
     color:var(--cream);
@@ -138,6 +137,7 @@
 
   .btn:hover{ background:#EDE7D8; }
 
+  /* Despre */
   .about{
     padding:80px 0;
   }
@@ -169,6 +169,7 @@
   .fact .label{ font-size:13px; color:var(--ink-soft); margin-bottom:4px; }
   .fact .value{ font-family:'Newsreader', serif; font-size:18px; }
 
+  /* Materiale */
   .materials{
     padding:80px 0;
     background:#F2F0E6;
@@ -207,6 +208,7 @@
     max-width:480px;
   }
 
+  /* Contact */
   .contact{
     padding:80px 0 90px;
   }
@@ -246,6 +248,7 @@
 
   .hours{ font-size:14px; color:var(--ink-soft); }
 
+  /* Footer */
   footer{
     background:var(--ink);
     color:#B9C4B9;
