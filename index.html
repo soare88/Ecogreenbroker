@@ -208,6 +208,45 @@
     max-width:480px;
   }
 
+  /* Oportunitati */
+  .opportunities{
+    padding:80px 0;
+  }
+
+  .opportunities h2{
+    font-size:28px;
+    margin-bottom:14px;
+  }
+
+  .opp-row{
+    display:grid;
+    grid-template-columns:36px 1fr;
+    gap:20px;
+    align-items:start;
+    padding:24px 0;
+    border-top:1px solid var(--line);
+  }
+
+  .opp-row:last-child{ border-bottom:1px solid var(--line); }
+
+  .opp-row .opp-num{
+    font-family:'Newsreader', serif;
+    font-size:19px;
+    color:var(--accent);
+  }
+
+  .opp-row h3{
+    font-family:'Newsreader', serif;
+    font-size:19px;
+    font-weight:600;
+    margin-bottom:6px;
+  }
+
+  .opp-row p{
+    color:var(--ink-soft);
+    max-width:560px;
+  }
+
   /* Contact */
   .contact{
     padding:80px 0 90px;
@@ -264,6 +303,7 @@
     .about .container{ grid-template-columns:1fr; }
     .material-row{ grid-template-columns:16px 1fr; }
     .material-row h3, .material-row p{ grid-column:2; }
+    .opp-row{ grid-template-columns:24px 1fr; }
     header .container{
       flex-wrap:wrap;
       justify-content:center;
@@ -293,9 +333,10 @@
     </a>
     <nav>
       <ul>
-        <li><a href="#despre">Despre</a></li>
-        <li><a href="#materiale">Servicii</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#despre" data-i18n="nav.despre">Despre</a></li>
+        <li><a href="#materiale" data-i18n="nav.materiale">Servicii</a></li>
+        <li><a href="#oportunitati" data-i18n="nav.oportunitati">Oportunități</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -303,31 +344,35 @@
 
 <section class="hero">
   <div class="container">
-    <h1>Legătura de încredere dintre generatori și operatori autorizați.</h1>
-    <p>Eco Green Broker facilitează intermedierea deșeurilor reciclabile, fără a intra fizic în posesia mărfii — doar conexiunea potrivită, la momentul potrivit.</p>
-    <a href="#contact" class="btn">Ia legătura cu noi</a>
+    <h1 data-i18n="hero.h1">Legătura de încredere dintre generatori și operatori autorizați.</h1>
+    <p data-i18n="hero.p">Eco Green Broker facilitează intermedierea deșeurilor reciclabile, fără a intra fizic în posesia mărfii — doar conexiunea potrivită, la momentul potrivit.</p>
+    <a href="#contact" class="btn" data-i18n="hero.cta">Ia legătura cu noi</a>
   </div>
 </section>
 
 <section id="despre" class="about">
   <div class="container">
     <div>
-      <h2>Rol de broker, nu de operator</h2>
-      <p>Societatea desfășoară activități de intermediere între firme care generează deșeuri reciclabile și operatori licențiați pentru preluare și valorificare, fără a manipula fizic materialele.</p>
-      <p>Obiectivul nostru este dezvoltarea unei rețele de parteneri de încredere, care să simplifice procesul de valorificare pentru ambele părți.</p>
+      <h2 data-i18n="about.h2">Rol de broker, nu de operator</h2>
+      <p data-i18n="about.p1">Suntem o societate de broker specializată în colectarea deșeurilor reciclabile, fără a intra fizic în posesia acestora — facem legătura dintre firmele care generează deșeuri și operatorii autorizați care le valorifică.</p>
+      <p data-i18n="about.p2">Activitatea se desfășoară în baza autorizației de mediu deținute, cu respectarea integrală a reglementărilor legale privind intermedierea deșeurilor reciclabile.</p>
     </div>
     <div class="about-facts">
       <div class="fact">
-        <div class="label">Rol</div>
-        <div class="value">Brokeraj / intermediere</div>
+        <div class="label" data-i18n="fact1.label">Rol</div>
+        <div class="value" data-i18n="fact1.value">Brokeraj / intermediere</div>
       </div>
       <div class="fact">
-        <div class="label">Fără</div>
-        <div class="value">Manipulare fizică a mărfii</div>
+        <div class="label" data-i18n="fact2.label">Autorizare</div>
+        <div class="value" data-i18n="fact2.value">Autorizație de mediu valabilă</div>
       </div>
       <div class="fact">
-        <div class="label">Parteneri</div>
-        <div class="value">Operatori autorizați de valorificare</div>
+        <div class="label" data-i18n="fact3.label">Fără</div>
+        <div class="value" data-i18n="fact3.value">Manipulare fizică a mărfii</div>
+      </div>
+      <div class="fact">
+        <div class="label" data-i18n="fact4.label">Parteneri</div>
+        <div class="value" data-i18n="fact4.value">Operatori autorizați de valorificare</div>
       </div>
     </div>
   </div>
@@ -335,39 +380,159 @@
 
 <section id="materiale" class="materials">
   <div class="container">
-    <h2>Materiale intermediate</h2>
+    <h2 data-i18n="materials.h2">Materiale intermediate</h2>
 
     <div class="material-row">
       <span class="swatch" style="background:#A8763E"></span>
-      <h3>Hârtie și carton</h3>
-      <p>Identificăm soluții eficiente de preluare și valorificare pentru volume de hârtie și carton.</p>
+      <h3 data-i18n="mat1.title">Hârtie și carton</h3>
+      <p data-i18n="mat1.desc">Identificăm soluții eficiente de preluare și valorificare pentru volume de hârtie și carton.</p>
     </div>
 
     <div class="material-row">
       <span class="swatch" style="background:#3E6E82"></span>
-      <h3>Plastic</h3>
-      <p>Facilităm intermedierea fluxurilor de deșeuri plastice — folii, ambalaje și mase plastice industriale.</p>
+      <h3 data-i18n="mat2.title">Plastic</h3>
+      <p data-i18n="mat2.desc">Facilităm intermedierea fluxurilor de deșeuri plastice — folii, ambalaje și mase plastice industriale.</p>
+    </div>
+  </div>
+</section>
+
+<section id="oportunitati" class="opportunities">
+  <div class="container">
+    <h2 data-i18n="opp.h2">Oportunități de business</h2>
+    <p style="color:var(--ink-soft); max-width:600px; margin-bottom:36px;" data-i18n="opp.intro">Pe lângă activitatea de bază de brokeraj, explorăm constant direcții de extindere care aduc valoare partenerilor noștri:</p>
+
+    <div class="opp-row">
+      <span class="opp-num">01</span>
+      <div>
+        <h3 data-i18n="opp1.title">Dezvoltarea infrastructurii de colectare și reciclare</h3>
+        <p data-i18n="opp1.desc">Parteneriate cu administrații locale (primării) pentru colectarea deșeurilor reciclabile.</p>
+      </div>
+    </div>
+
+    <div class="opp-row">
+      <span class="opp-num">02</span>
+      <div>
+        <h3 data-i18n="opp2.title">Valorificarea deșeurilor ca materie primă</h3>
+        <p data-i18n="opp2.desc">Comercializarea deșeurilor reciclabile către companii de reciclare sau fabrici care folosesc material reciclat.</p>
+      </div>
+    </div>
+
+    <div class="opp-row">
+      <span class="opp-num">03</span>
+      <div>
+        <h3 data-i18n="opp3.title">Parteneriate industriale</h3>
+        <p data-i18n="opp3.desc">Colaborare cu companii industriale (fabrici, construcții) pentru colectarea și reciclarea deșeurilor generate, inclusiv participarea la inițiative de parteneriat public-privat pentru infrastructură de mediu.</p>
+      </div>
+    </div>
+
+    <div class="opp-row">
+      <span class="opp-num">04</span>
+      <div>
+        <h3 data-i18n="opp4.title">Servicii de consultanță de mediu</h3>
+        <p data-i18n="opp4.desc">Sprijin pentru companii în gestionarea deșeurilor, implementarea politicilor de reciclare și obținerea certificărilor de mediu.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="contact" class="contact">
   <div class="container">
-    <h2>Date de contact</h2>
+    <h2 data-i18n="contact.h2">Date de contact</h2>
     <div class="contact-panel">
       <a href="tel:+40791025888" class="phone-link">0791 025 888</a>
       <a href="mailto:contact@ecogreenbroker.ro" class="email-link">contact@ecogreenbroker.ro</a>
-      <div class="hours">Luni – Vineri, 08:00 – 18:00</div>
+      <div class="hours" data-i18n="contact.hours">Luni – Vineri, 08:00 – 18:00</div>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p>&copy; 2026 Eco Green Broker (ecogreenbroker.ro). Toate drepturile rezervate.</p>
-    <p>Activitate exclusivă de intermediere și brokeraj în domeniul gestionării deșeurilor reciclabile.</p>
+    <p data-i18n="footer.copyright">&copy; 2026 Eco Green Broker (ecogreenbroker.ro). Toate drepturile rezervate.</p>
+    <p data-i18n="footer.tagline">Activitate exclusivă de intermediere și brokeraj în domeniul gestionării deșeurilor reciclabile.</p>
   </div>
 </footer>
+
+<script>
+(function(){
+  var translations = {
+    en: {
+      "nav.despre":"About","nav.materiale":"Services","nav.oportunitati":"Opportunities","nav.contact":"Contact",
+      "hero.h1":"The trusted link between generators and authorized operators.",
+      "hero.p":"Eco Green Broker facilitates the intermediation of recyclable waste, without physically taking possession of the goods — just the right connection, at the right time.",
+      "hero.cta":"Get in touch",
+      "about.h2":"A broker's role, not an operator's",
+      "about.p1":"We are a brokerage company specialized in recyclable waste collection, without physically taking possession of it — we connect companies that generate waste with authorized operators that recover it.",
+      "about.p2":"The activity is carried out under our valid environmental permit, in full compliance with legal regulations on the intermediation of recyclable waste.",
+      "fact1.label":"Role","fact1.value":"Brokerage / intermediation",
+      "fact2.label":"Authorization","fact2.value":"Valid environmental permit",
+      "fact3.label":"Without","fact3.value":"Physical handling of the goods",
+      "fact4.label":"Partners","fact4.value":"Authorized recovery operators",
+      "materials.h2":"Materials we intermediate",
+      "mat1.title":"Paper and cardboard","mat1.desc":"We identify efficient collection and recovery solutions for paper and cardboard volumes.",
+      "mat2.title":"Plastic","mat2.desc":"We facilitate the intermediation of plastic waste flows — film, packaging and industrial plastics.",
+      "opp.h2":"Business opportunities",
+      "opp.intro":"Beyond our core brokerage activity, we constantly explore expansion directions that bring value to our partners:",
+      "opp1.title":"Developing collection and recycling infrastructure","opp1.desc":"Partnerships with local authorities (municipalities) for the collection of recyclable waste.",
+      "opp2.title":"Recovering waste as raw material","opp2.desc":"Selling recyclable waste to recycling companies or factories that use recycled material.",
+      "opp3.title":"Industrial partnerships","opp3.desc":"Collaboration with industrial companies (factories, construction) for the collection and recycling of the waste they generate, including participation in public-private partnership initiatives for environmental infrastructure.",
+      "opp4.title":"Environmental consulting services","opp4.desc":"Support for companies in waste management, implementing recycling policies and obtaining environmental certifications.",
+      "contact.h2":"Contact details",
+      "contact.hours":"Monday – Friday, 8:00 AM – 6:00 PM",
+      "footer.copyright":"© 2026 Eco Green Broker (ecogreenbroker.ro). All rights reserved.",
+      "footer.tagline":"Exclusive intermediation and brokerage activity in the field of recyclable waste management."
+    },
+    de: {
+      "nav.despre":"Über uns","nav.materiale":"Leistungen","nav.oportunitati":"Chancen","nav.contact":"Kontakt",
+      "hero.h1":"Die vertrauenswürdige Verbindung zwischen Erzeugern und zugelassenen Betreibern.",
+      "hero.p":"Eco Green Broker vermittelt recycelbare Abfälle, ohne die Ware physisch in Besitz zu nehmen — nur die richtige Verbindung, zum richtigen Zeitpunkt.",
+      "hero.cta":"Kontaktieren Sie uns",
+      "about.h2":"Rolle als Broker, nicht als Betreiber",
+      "about.p1":"Wir sind ein auf die Vermittlung recycelbarer Abfälle spezialisiertes Maklerunternehmen, ohne die Ware physisch in Besitz zu nehmen — wir verbinden Unternehmen, die Abfälle erzeugen, mit zugelassenen Betreibern, die sie verwerten.",
+      "about.p2":"Die Tätigkeit wird auf Grundlage unserer gültigen Umweltgenehmigung ausgeübt, unter vollständiger Einhaltung der gesetzlichen Vorschriften zur Vermittlung recycelbarer Abfälle.",
+      "fact1.label":"Rolle","fact1.value":"Maklertätigkeit / Vermittlung",
+      "fact2.label":"Genehmigung","fact2.value":"Gültige Umweltgenehmigung",
+      "fact3.label":"Ohne","fact3.value":"Physische Handhabung der Ware",
+      "fact4.label":"Partner","fact4.value":"Zugelassene Verwertungsbetriebe",
+      "materials.h2":"Vermittelte Materialien",
+      "mat1.title":"Papier und Karton","mat1.desc":"Wir identifizieren effiziente Sammel- und Verwertungslösungen für Papier- und Kartonmengen.",
+      "mat2.title":"Kunststoff","mat2.desc":"Wir vermitteln Kunststoffabfallströme — Folien, Verpackungen und industrielle Kunststoffe.",
+      "opp.h2":"Geschäftschancen",
+      "opp.intro":"Neben unserer Kerntätigkeit als Makler erkunden wir ständig Erweiterungsmöglichkeiten, die unseren Partnern einen Mehrwert bieten:",
+      "opp1.title":"Entwicklung der Sammel- und Recyclinginfrastruktur","opp1.desc":"Partnerschaften mit lokalen Behörden (Gemeinden) zur Sammlung recycelbarer Abfälle.",
+      "opp2.title":"Verwertung von Abfällen als Rohstoff","opp2.desc":"Verkauf von recycelbaren Abfällen an Recyclingunternehmen oder Fabriken, die recyceltes Material verwenden.",
+      "opp3.title":"Industrielle Partnerschaften","opp3.desc":"Zusammenarbeit mit Industrieunternehmen (Fabriken, Bauwesen) zur Sammlung und zum Recycling ihrer Abfälle, einschließlich der Teilnahme an öffentlich-privaten Partnerschaftsinitiativen für Umweltinfrastruktur.",
+      "opp4.title":"Umweltberatungsdienste","opp4.desc":"Unterstützung für Unternehmen im Abfallmanagement, bei der Umsetzung von Recyclingrichtlinien und beim Erwerb von Umweltzertifizierungen.",
+      "contact.h2":"Kontaktdaten",
+      "contact.hours":"Montag – Freitag, 08:00 – 18:00 Uhr",
+      "footer.copyright":"© 2026 Eco Green Broker (ecogreenbroker.ro). Alle Rechte vorbehalten.",
+      "footer.tagline":"Ausschließliche Vermittlungs- und Maklertätigkeit im Bereich des Managements recycelbarer Abfälle."
+    }
+  };
+
+  function detectLang(){
+    var langs = navigator.languages || [navigator.language || 'ro'];
+    for (var i=0;i<langs.length;i++){
+      var l = (langs[i]||'').slice(0,2).toLowerCase();
+      if (l==='en'||l==='de') return l;
+    }
+    return 'ro';
+  }
+
+  function applyLang(lang){
+    if (lang === 'ro') { document.documentElement.lang = 'ro'; return; }
+    var dict = translations[lang];
+    if (!dict) return;
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var key = el.getAttribute('data-i18n');
+      if (dict[key] !== undefined) el.textContent = dict[key];
+    });
+    document.documentElement.lang = lang;
+  }
+
+  applyLang(detectLang());
+})();
+</script>
 
 </body>
 </html>
