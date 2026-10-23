@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brokeraj Deșeuri Reciclabile | Eco Green Broker</title>
+<meta name="description" content="Intermediere și brokeraj pentru deșeuri reciclabile: legăm firmele care generează deșeuri de operatorii autorizați de valorificare.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.ecogreenbroker.ro/brokeraj-deseuri-reciclabile.html">
+<meta property="og:site_name" content="Eco Green Broker">
+<meta property="og:title" content="Brokeraj Deșeuri Reciclabile | Eco Green Broker">
+<meta property="og:description" content="Intermediere și brokeraj pentru deșeuri reciclabile: legăm firmele care generează deșeuri de operatorii autorizați de valorificare.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.ecogreenbroker.ro/brokeraj-deseuri-reciclabile.html">
+<meta property="og:locale" content="ro_RO">
+<style>
+  :root{
+    --ink:#16241A;
+    --ink-soft:#4B5A4F;
+    --cream:#FAF8F2;
+    --accent:#4C8B5A;
+    --line:#DDE3D9;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    line-height:1.6;
+    font-size:16px;
+  }
+
+  h1, h2{
+    font-family:'Newsreader', serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+
+  a{ color:inherit; }
+
+  .container{
+    width:90%;
+    max-width:1080px;
+    margin:0 auto;
+  }
+
+  /* Header */
+  header{
+    position:sticky;
+    top:0;
+    background:var(--cream);
+    border-bottom:1px solid var(--line);
+    z-index:100;
+  }
+
+  header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+  }
+
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Newsreader', serif;
+    font-weight:600;
+    font-size:19px;
+    text-decoration:none;
+    color:var(--ink);
+  }
+
+  .logo svg{ flex-shrink:0; }
+
+  nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+  }
+
+  nav a{
+    text-decoration:none;
+    font-size:15px;
+    color:var(--ink-soft);
+  }
+
+  nav a:hover{ color:var(--ink); }
+
+  /* Selector limba */
+  nav ul .lang-switch{ display:flex; align-items:center; gap:4px; }
+  .lang-switch button{
+    font-family:inherit;
+    font-size:12.5px;
+    font-weight:600;
+    letter-spacing:.04em;
+    padding:4px 8px;
+    border:1px solid var(--line);
+    border-radius:6px;
+    background:transparent;
+    color:var(--ink-soft);
+    cursor:pointer;
+    transition:color .2s, border-color .2s, background .2s;
+  }
+  .lang-switch button:hover{ color:var(--ink); border-color:var(--ink-soft); }
+  .lang-switch button.active{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:#fff;
+  }
+
+  /* Hero — background photo with dark overlay */
+  .hero{
+    position:relative;
+    min-height:78vh;
+    display:flex;
+    align-items:center;
+    background-image: linear-gradient(rgba(12,20,14,.72), rgba(12,20,14,.8)), url('images/hero-bg.jpg');
+    background-size:cover;
+    background-position:center;
+    color:var(--cream);
+  }
+
+  .hero .container{
+    padding:100px 0;
+  }
+
+  .hero h1{
+    font-size:44px;
+    line-height:1.22;
+    max-width:640px;
+    margin-bottom:22px;
+  }
+
+  .hero p{
+    font-size:17px;
+    max-width:480px;
+    color:#E4E9E1;
+    margin-bottom:32px;
+  }
+
+  .btn{
+    display:inline-block;
+    background:var(--cream);
+    color:var(--ink);
+    padding:14px 32px;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:600;
+    border-radius:3px;
+  }
+
+  .btn:hover{ background:#EDE7D8; }
+
+  /* Despre */
+  .about{
+    padding:80px 0;
+  }
+
+  .about .container{
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:60px;
+  }
+
+  .about h2{
+    font-size:28px;
+    margin-bottom:20px;
+  }
+
+  .about p{
+    color:var(--ink-soft);
+    margin-bottom:16px;
+    max-width:480px;
+  }
+
+  .about-facts .fact{
+    padding:16px 0;
+    border-top:1px solid var(--line);
+  }
+
+  .about-facts .fact:last-child{ border-bottom:1px solid var(--line); }
+
+  .fact .label{ font-size:13px; color:var(--ink-soft); margin-bottom:4px; }
+  .fact .value{ font-family:'Newsreader', serif; font-size:18px; }
+
+  /* Materiale */
+  .materials{
+    padding:80px 0;
+    background:#F2F0E6;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+
+  .materials h2{
+    font-size:28px;
+    margin-bottom:36px;
+  }
+
+  .material-row{
+    display:grid;
+    grid-template-columns:20px 200px 1fr;
+    gap:24px;
+    align-items:start;
+    padding:24px 0;
+    border-top:1px solid var(--line);
+  }
+
+  .material-row:last-child{ border-bottom:1px solid var(--line); }
+
+  .material-row .swatch{
+    width:16px; height:16px; margin-top:4px; border-radius:50%;
+  }
+
+  .material-row h3{
+    font-family:'Newsreader', serif;
+    font-size:19px;
+    font-weight:600;
+  }
+
+  .material-row p{
+    color:var(--ink-soft);
+    max-width:480px;
+  }
+
+  /* Oportunitati */
+  .opportunities{
+    padding:80px 0;
+  }
+
+  .opportunities h2{
+    font-size:28px;
+    margin-bottom:14px;
+  }
+
+  .opp-row{
+    display:grid;
+    grid-template-columns:36px 1fr;
+    gap:20px;
+    align-items:start;
+    padding:24px 0;
+    border-top:1px solid var(--line);
+  }
+
+  .opp-row:last-child{ border-bottom:1px solid var(--line); }
+
+  .opp-row .opp-num{
+    font-family:'Newsreader', serif;
+    font-size:19px;
+    color:var(--accent);
+  }
+
+  .opp-row h3{
+    font-family:'Newsreader', serif;
+    font-size:19px;
+    font-weight:600;
+    margin-bottom:6px;
+  }
+
+  .opp-row p{
+    color:var(--ink-soft);
+    max-width:560px;
+  }
+
+  /* Contact */
+  .contact{
+    padding:80px 0 90px;
+  }
+
+  .contact h2{
+    font-size:28px;
+    margin-bottom:24px;
+    text-align:center;
+  }
+
+  .contact-panel{
+    max-width:420px;
+    margin:0 auto;
+    text-align:center;
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:36px;
+  }
+
+  .phone-link{
+    display:block;
+    font-family:'Newsreader', serif;
+    font-size:26px;
+    font-weight:600;
+    text-decoration:none;
+    color:var(--ink);
+    margin-bottom:10px;
+  }
+
+  .email-link{
+    display:block;
+    font-size:15px;
+    text-decoration:none;
+    color:var(--accent);
+    margin-bottom:14px;
+  }
+
+  .hours{ font-size:14px; color:var(--ink-soft); }
+
+  /* Footer */
+  footer{
+    background:var(--ink);
+    color:#B9C4B9;
+    padding:32px 0;
+  }
+
+  footer .container{ font-size:13px; }
+  footer p + p{ margin-top:4px; color:#7C8A7C; }
+
+  @media (max-width:760px){
+    .hero h1{ font-size:32px; }
+    .hero .container{ padding:70px 0; }
+    .about .container{ grid-template-columns:1fr; }
+    .material-row{ grid-template-columns:16px 1fr; }
+    .material-row h3, .material-row p{ grid-column:2; }
+    .opp-row{ grid-template-columns:24px 1fr; }
+    header .container{
+      flex-wrap:wrap;
+      justify-content:center;
+      row-gap:10px;
+      padding:16px 0;
+    }
+    nav ul{ gap:16px; justify-content:center; }
+  }
+
+  @media (max-width:420px){
+    .logo{ font-size:17px; }
+    .hero h1{ font-size:26px; }
+    nav ul{ gap:12px; }
+    nav a{ font-size:13px; }
+  }
+</style>
+</head>
+<body>
+<header><nav><a href="https://www.ecogreenbroker.ro/">Eco Green Broker</a> | <a href="https://www.ecogreenbroker.ro/">Acasă</a></nav></header>
+<main>
+<h1>Brokeraj deșeuri reciclabile</h1>
+<p>Eco Green Broker facilitează intermedierea deșeurilor reciclabile, fără a intra fizic în posesia mărfii: facem legătura dintre firmele care generează deșeuri și operatorii autorizați care le valorifică.</p>
+<section><h2>Rol de broker, nu de operator</h2><p>Activitatea se desfășoară în baza autorizației de mediu deținute, cu respectarea reglementărilor privind intermedierea deșeurilor reciclabile.</p></section>
+<section><h2>Materiale intermediate</h2><ul><li>Hârtie și carton: soluții de preluare și valorificare pentru volume de hârtie și carton.</li><li>Plastic: intermedierea fluxurilor de deșeuri plastice, folii, ambalaje și mase plastice industriale.</li></ul></section>
+<section><h2>Servicii pentru parteneri</h2><ul><li>Parteneriate cu administrații locale pentru colectarea deșeurilor reciclabile.</li><li>Colaborare cu companii industriale pentru colectarea și reciclarea deșeurilor generate.</li><li>Sprijin în gestionarea deșeurilor și în obținerea certificărilor de mediu.</li></ul></section>
+
+<section><h2>Contact</h2><p>Telefon: 0791 025 888</p><p>Email: contact@ecogreenbroker.ro</p><p>Program: Luni – Vineri, 08:00 – 18:00</p></section>
+</main>
+<footer><p>© 2026 Eco Green Broker (ecogreenbroker.ro). Toate drepturile rezervate.</p></footer>
+</body>
+</html>
